@@ -8,11 +8,13 @@
 int main(void)
 {
 	int i;
+	int beginningOfAsciiSet;
 
 	i = 0;
+	beginningOfAsciiSet = 48;
 	while (i < 10)
 	{
-		putchar(i);
+		putchar(i + beginningOfAsciiSet);
 		i++;
 	}
 	putchar('\n');
