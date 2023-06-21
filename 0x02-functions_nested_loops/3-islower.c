@@ -8,5 +8,11 @@
 
 int _islower(int c)
 {
-	return (islower(c) > 0 ? 1 : 0);
+	char a;
+	int upperBound;
+
+	a = 'a';
+	upperBound = a + 25;
+
+	return (a <= c && c <= upperBound ? 1 : 0);
 }
