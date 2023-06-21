@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 
 /**
  * print_alphabet - prints all lowercase alphabets
@@ -9,15 +8,16 @@
 
 void print_alphabet(void)
 {
-	char alphabets[] = "abcdefghijklmnopqrstuvwxyz";
+	char a;
 	int arrLen;
 	int i;
 
-	arrLen = strlen(alphabets);
+	arrLen = 26;
+	a = 'a';
 	for (i = 0; i < arrLen; i++)
 	{
-		putchar(alphabets[i]);
+		_putchar(i + a);
 	}
 
-	putchar('\n');
+	_putchar('\n');
 }
