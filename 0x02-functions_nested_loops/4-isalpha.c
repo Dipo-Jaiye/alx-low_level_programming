@@ -9,5 +9,15 @@
 
 int _isalpha(int c)
 {
-	return (isalpha(c) > 0 ? 1 : 0);
+	char a, A;
+	int firstTest, secondTest;
+	int lowercaseBound, uppercaseBound;
+
+	a = 'a';
+	A = 'A';
+	lowercaseBound = a + 25;
+	uppercaseBound = A + 25;
+	firstTest = a <= c && c <= lowercaseBound;
+	secondTest = c >= A && c <= uppercaseBound;
+	return ((firstTest || secondTest) ? 1 : 0);
 }
